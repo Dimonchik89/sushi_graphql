@@ -1,0 +1,47 @@
+scalar Upload
+
+type FileUploadResponse {
+    ETag: String!
+    Location: String!
+    key: String!
+    Key: String!
+    Bucket: String!
+}
+
+type: Product {
+    id: ID!
+    name: String!
+    massa: Int!
+    cost: Int!
+    categoryId: Int!
+    componenst: String!
+    image: String!
+}
+
+type Category {
+    id: ID!
+    name: String!
+}
+
+type User {
+    id: ID!
+    email: String!
+    role: String!
+    password: String!
+}
+
+type Cart {
+    id: ID!
+    userId: Int!
+}
+
+type Query {
+    getCategories: [Category]
+    getProducts: [Product]
+    getSomeProducts(categoryId: Int!): [Product]
+    getCart: [Cart]
+}
+
+type Mutation {
+
+}
