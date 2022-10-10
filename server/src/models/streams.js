@@ -14,4 +14,4 @@ const createUploadStream = (key) => {
             .promise()
     }
 }
-module.exports = createUploadStream
+module.exports = createUploadStream;
