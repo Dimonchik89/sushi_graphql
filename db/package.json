@@ -12,5 +12,9 @@
   "devDependencies": {
     "sequelize": "^6.24.0",
     "sequelize-cli": "^6.5.1"
+  },
+  "dependencies": {
+    "docker-compose": "^0.23.17",
+    "pg": "^8.8.0"
   }
 }
